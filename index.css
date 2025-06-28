@@ -1,0 +1,7 @@
+@import "./components/tile.css";
+@import "./components/tilemanager.css";
+
+p,div{
+    margin: 1em;
+    font-family: sans-serif;
+}
