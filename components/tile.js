@@ -25,12 +25,12 @@ class TileComponent extends HTMLElement {
             let tileImg = this.querySelector("img")
             if (!this.show) {
                 if (!this.flagged) {
-                    tileImg.src = `/assets/h-tile.png`
+                    tileImg.src = `assets/h-tile.png`
                 }else{
-                    tileImg.src = `/assets/flag-tile.png`
+                    tileImg.src = `assets/flag-tile.png`
                 }
             } else {
-                tileImg.src = `/assets/${this.value}-tile.png`
+                tileImg.src = `assets/${this.value}-tile.png`
             }
         }
     }
@@ -39,7 +39,7 @@ class TileComponent extends HTMLElement {
         if (!(this.querySelector("img"))) {
             let tileImg = document.createElement("img")
             console.log("A tile is connected to DOM")
-            tileImg.src = "/assets/h-tile.png"
+            tileImg.src = "assets/h-tile.png"
             tileImg.width = 32
             tileImg.height = 32
             this.appendChild(tileImg)
